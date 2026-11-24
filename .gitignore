@@ -1,0 +1,50 @@
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Gmail OAuth tokens
+gmail_token.json
+**/gmail_token.json
+token.json
+credentials.json
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+
+# Node.js
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# Additional security protection
+*.pem
+*.key
+*.p12
+*.pfx
+*.secret
+secrets/
+secrets.*
+*.sqlite
+*.sqlite3
+*.db
+
+# Python generated files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Backup files
+*.backup
+
+!**/.env.example
