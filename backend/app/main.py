@@ -1,4 +1,4 @@
-import os
+﻿import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -29,7 +29,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:5174",
-        "http://localhost:5175"
+        "http://localhost:5175",
+        "http://localhost:5176"
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -53,3 +54,5 @@ def home():
 @app.get("/health")
 def health_check():
     return {"status": "healthy"}
+
+
